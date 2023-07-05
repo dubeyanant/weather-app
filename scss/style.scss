@@ -1,2 +1,13 @@
 @forward "util";
 @forward "components";
+@use "util/var" as v;
+
+body {
+  background-color: v.$blue-light;
+  color: v.$blue-dark;
+}
+
+.blurred {
+  filter: blur(3px);
+  overflow: hidden;
+}
